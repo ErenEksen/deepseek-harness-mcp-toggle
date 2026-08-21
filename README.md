@@ -5,7 +5,8 @@
 
 A dual-face plugin for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (DSH) that adds an **MCP Servers** management section to the Web settings UI, allowing you to enable or disable MCP servers on the fly without manual configuration edits or restarting the server.
 
----
+<img width="801" height="806" alt="image" src="https://github.com/user-attachments/assets/d66f270e-3578-41db-9f62-1eedbd046106" />
+
 
 ## Features
 
