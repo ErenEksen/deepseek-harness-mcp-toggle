@@ -1,0 +1,109 @@
+{
+  "name": "dsh-plugin-mcp-toggle",
+  "description": "DeepSeek Harness plugin to enable and disable MCP servers directly from the Web settings UI",
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/types/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "types": "./lib/types/client/index.d.ts",
+      "default": "./lib/client.js"
+    },
+    "./types": {
+      "types": "./lib/types/types.d.ts"
+    },
+    "./remote": {
+      "types": "./lib/types/remote.d.ts"
+    },
+    "./package.json": "./package.json",
+    "./typert": {
+      "types": "./lib/types/typert.host.d.ts",
+      "default": "./lib/typert.host.js"
+    }
+  },
+  "files": [
+    "lib",
+    "scripts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsdown",
+    "watch": "tsdown --watch",
+    "test": "tsx --test tests/*.spec.ts"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/cordis-plugin-loader": "^1.0.2",
+    "@deepseek-ai/dsh-typert-protocol": "^0.1.0-rc.8",
+    "@deepseek-ai/dsh-api-remotes": "^0.1.0-rc.8",
+    "@deepseek-ai/dsh-client-locale": "^0.1.0-rc.8",
+    "@deepseek-ai/dsh-client-runtime": "^0.1.0-rc.8",
+    "@deepseek-ai/dsh-client-ui-primitives": "^0.1.0-rc.8",
+    "@deepseek-ai/dsh-client-ui-settings": "^0.1.0-rc.8",
+    "@deepseek-ai/dsh-client-ui-slots": "^0.1.0-rc.8"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/cordis-plugin-loader": "^1.0.2",
+    "@deepseek-ai/dsh-typert-protocol": "^0.1.0-rc.8",
+    "@deepseek-ai/dsh-api-remotes": "^0.1.0-rc.8",
+    "@deepseek-ai/dsh-client-locale": "^0.1.0-rc.8",
+    "@deepseek-ai/dsh-client-runtime": "^0.1.0-rc.8",
+    "@deepseek-ai/dsh-client-ui-primitives": "^0.1.0-rc.8",
+    "@deepseek-ai/dsh-client-ui-settings": "^0.1.0-rc.8",
+    "@deepseek-ai/dsh-client-ui-slots": "^0.1.0-rc.8",
+    "@types/node": "^22.0.0",
+    "@types/react": "~18.3.1",
+    "@types/react-dom": "~18.3.0",
+    "lightningcss": "^1.32.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tsdown": "^0.22.2",
+    "tsx": "^4.19.0",
+    "typescript": "^6.0.3",
+    "zod": "^4.4.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  },
+  "author": "Eren Eksen",
+  "homepage": "https://github.com/ErenEksen/deepseek-harness-mcp-toggle#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErenEksen/deepseek-harness-mcp-toggle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ErenEksen/deepseek-harness-mcp-toggle/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mcp",
+    "model-context-protocol",
+    "cordis",
+    "settings",
+    "ui"
+  ]
+}

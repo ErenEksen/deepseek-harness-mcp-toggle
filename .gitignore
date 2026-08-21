@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+.npm-cache/
+
+# Build artifacts
+# lib/ is committed so users can install directly from Git repo if needed,
+# but can also be built on demand. If publishing to npm, files field in package.json controls it.
+
+# Temporary and log files
+*.log
+.DS_Store
+*.bak
+*.tmp*
+.dsh-test/
+.ui-test/
