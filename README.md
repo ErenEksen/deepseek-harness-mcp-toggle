@@ -1,4 +1,4 @@
-# deepseek-harness-mcp-toggle (`dsh-plugin-mcp-toggle`)
+# Deepseek Harness MCP Toggle Plugin (`dsh-plugin-mcp-toggle`)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![DeepSeek Harness](https://img.shields.io/badge/DSH-v0.1.0--rc.8-purple)](https://github.com/deepseek-ai/deepseek-harness)
@@ -63,11 +63,7 @@ A dual-face plugin for [DeepSeek Harness](https://github.com/deepseek-ai/deepsee
    ./scripts/migrate-patch.py ~/.dsh/profiles/web/cordis.patch.yml
    ```
 
-5. Restart DSH Web:
-   ```bash
-   bunx @deepseek-ai/dsh web
-   ```
-
+5. Restart DSH Web
 ---
 
 ## How It Works
